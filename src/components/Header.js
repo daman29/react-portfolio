@@ -5,11 +5,11 @@ import {
   RightContainer,
   InnerContainer,
   ExtendedContainer,
+  MenuButton,
 } from "../styles/NavbarStyle";
 
 function Header({ currentPage, handlePageChange }) {
-  
-  const [openedNavbar, setOpenedNavbar] = useState(false)
+  const [openedNavbar, setOpenedNavbar] = useState(false);
 
   return (
     <NavbarContainer>
@@ -17,7 +17,17 @@ function Header({ currentPage, handlePageChange }) {
         <LeftContainer>
           <h3>Hello</h3>
         </LeftContainer>
-        <RightContainer>About Me</RightContainer>
+        <RightContainer>
+          About Me{" "}
+          <MenuButton
+            onClick={() => {
+              setOpenedNavbar((current) => !current);
+            }}
+          >
+            {" "}
+            {openedNavbar ? <>&#10005;</> : <> &#8801;</>}
+          </MenuButton>
+        </RightContainer>
       </InnerContainer>
       <ExtendedContainer></ExtendedContainer>
     </NavbarContainer>

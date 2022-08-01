@@ -32,9 +32,23 @@ export const InnerContainer = styled.div`
 `;
 
 export const ExtendedContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+export const MenuButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
   color: white;
-  font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  margin: 10px;
+  font-size: 45px;
+  cursor: pointer;
+  @media (min-width: 700px) {
+    display: none;
+  }
 `;
