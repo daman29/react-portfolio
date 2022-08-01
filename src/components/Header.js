@@ -6,6 +6,7 @@ import {
   InnerContainer,
   ExtendedContainer,
   MenuButton,
+  LinkTag,
 } from "../styles/NavbarStyle";
 
 function Header({ currentPage, handlePageChange }) {
@@ -18,13 +19,15 @@ function Header({ currentPage, handlePageChange }) {
           <h3>Hello</h3>
         </LeftContainer>
         <RightContainer>
-          About Me{" "}
+          <LinkTag>About Me</LinkTag>
+          <LinkTag>Projects</LinkTag>
+          <LinkTag>Contact Me</LinkTag>
+          <LinkTag>Resume</LinkTag>
           <MenuButton
             onClick={() => {
               setOpenedNavbar((current) => !current);
             }}
           >
-            {" "}
             {openedNavbar ? <>&#10005;</> : <> &#8801;</>}
           </MenuButton>
         </RightContainer>

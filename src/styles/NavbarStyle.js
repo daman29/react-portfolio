@@ -14,14 +14,19 @@ export const LeftContainer = styled.div`
   flex: 30%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 3%;
 `;
 
 export const RightContainer = styled.div`
   flex: 70%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   padding-right: 5%;
+  @media (max-width: 700px) {
+    justify-content: flex-end;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -36,6 +41,13 @@ export const ExtendedContainer = styled.div`
   flex-direction: column;
   align-items: center;
   @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+export const LinkTag = styled.a`
+  text-decoration: none;
+  @media (max-width: 700px) {
     display: none;
   }
 `;
