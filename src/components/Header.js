@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   NavbarContainer,
   LeftContainer,
@@ -8,6 +8,9 @@ import {
 } from "../styles/NavbarStyle";
 
 function Header({ currentPage, handlePageChange }) {
+  
+  const [openedNavbar, setOpenedNavbar] = useState(false)
+
   return (
     <NavbarContainer>
       <InnerContainer>
