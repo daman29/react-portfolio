@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Pallette } from "../assets/ColourPallette";
 import Header from "./Header";
 import Footer from "./Footer";
 import { AboutMe } from "../pages/AboutMe";
@@ -12,6 +13,7 @@ const Container = styled.div`
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: ${Pallette.background};
 `;
 
 function MainContainer() {
