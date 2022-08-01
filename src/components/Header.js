@@ -1,15 +1,22 @@
 import React from "react";
-import {NavbarContainer, LeftContainer, RightContainer} from '../styles/NavbarStyle'
+import {
+  NavbarContainer,
+  LeftContainer,
+  RightContainer,
+  InnerContainer,
+  ExtendedContainer,
+} from "../styles/NavbarStyle";
 
 function Header({ currentPage, handlePageChange }) {
   return (
     <NavbarContainer>
-      <LeftContainer>
-        <h3>Hello</h3>
-      </LeftContainer>
-      <RightContainer>
-        About Me
-      </RightContainer>
+      <InnerContainer>
+        <LeftContainer>
+          <h3>Hello</h3>
+        </LeftContainer>
+        <RightContainer>About Me</RightContainer>
+      </InnerContainer>
+      <ExtendedContainer></ExtendedContainer>
     </NavbarContainer>
   );
 }

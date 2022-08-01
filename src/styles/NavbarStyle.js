@@ -3,9 +3,9 @@ import { Pallette } from "../assets/ColourPallette";
 
 export const NavbarContainer = styled.nav`
   width: 100%;
-  height: auto;
+  height: 80px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: ${Pallette.primary};
   color: white;
 `;
@@ -25,4 +25,16 @@ export const RightContainer = styled.div`
 `;
 
 export const InnerContainer = styled.div`
-`
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+`;
+
+export const ExtendedContainer = styled.div`
+  color: white;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+`;
