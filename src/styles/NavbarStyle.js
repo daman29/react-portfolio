@@ -52,6 +52,7 @@ export const ExtendedContainer = styled.div`
   width: 100%;
   top: 80px;
   background-color: ${Pallette.primary};
+  opacity: 90%;
   z-index: 99;
 
   @media (min-width: 700px) {
@@ -63,6 +64,10 @@ export const LinkTag = styled.a`
   text-decoration: none;
   font-size: large;
   cursor: pointer;
+  ${(props) =>
+    props.current
+      ? `color: orange; font-weight: bold;`
+      : ``}
   @media (max-width: 700px) {
     display: none;
   }
@@ -72,7 +77,11 @@ export const ExtendedLinkTag = styled.a`
   text-decoration: none;
   cursor: pointer;
   font-size: large;
-  margin-bottom: ${(props) => props.openedNavbar ? "5%" : 0};
+  margin-bottom: ${(props) => (props.openedNavbar ? "2%" : 0)};
+  ${(props) =>
+    props.current
+      ? `color: orange; font-weight: bold;`
+      : ``}
 `;
 
 export const MenuButton = styled.button`

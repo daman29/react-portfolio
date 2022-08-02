@@ -12,7 +12,7 @@ import {
 
 function Header({ currentPage, handlePageChange }) {
   const [openedNavbar, setOpenedNavbar] = useState(false);
-
+  
   return (
     <NavbarContainer >
       <InnerContainer>
@@ -20,16 +20,16 @@ function Header({ currentPage, handlePageChange }) {
           <h2>Damneet Sambhy</h2>
         </LeftContainer>
         <RightContainer>
-          <LinkTag onClick={() => handlePageChange("AboutMe")}>
+          <LinkTag onClick={() => handlePageChange("AboutMe")} current={currentPage === "AboutMe" ? true : false}>
             About Me
           </LinkTag>
-          <LinkTag onClick={() => handlePageChange("Projects")}>
+          <LinkTag onClick={() => handlePageChange("Projects")} current={currentPage === "Projects" ? true : false}>
             Projects
           </LinkTag>
-          <LinkTag onClick={() => handlePageChange("Contact")}>
+          <LinkTag onClick={() => handlePageChange("Contact")} current={currentPage === "Contact" ? true : false}>
             Contact Me
           </LinkTag>
-          <LinkTag onClick={() => handlePageChange("Resume")}>Resume</LinkTag>
+          <LinkTag onClick={() => handlePageChange("Resume")} current={currentPage === "Resume" ? true : false}>Resume</LinkTag>
           <MenuButton
             onClick={() => {
               setOpenedNavbar((current) => !current);
@@ -41,7 +41,7 @@ function Header({ currentPage, handlePageChange }) {
       </InnerContainer>
       {openedNavbar && (
         <ExtendedContainer >
-          <ExtendedLinkTag 
+          <ExtendedLinkTag current={currentPage === "AboutMe" ? true : false}
             onClick={() => {
               handlePageChange("AboutMe");
               setOpenedNavbar((current) => !current);
@@ -49,7 +49,7 @@ function Header({ currentPage, handlePageChange }) {
           >
             About Me
           </ExtendedLinkTag>
-          <ExtendedLinkTag
+          <ExtendedLinkTag current={currentPage === "Projects" ? true : false}
             onClick={() => {
               handlePageChange("Projects");
               setOpenedNavbar((current) => !current);
@@ -57,7 +57,7 @@ function Header({ currentPage, handlePageChange }) {
           >
             Projects
           </ExtendedLinkTag>
-          <ExtendedLinkTag
+          <ExtendedLinkTag current={currentPage === "Contact" ? true : false}
             onClick={() => {
               handlePageChange("Contact");
               setOpenedNavbar((current) => !current);
@@ -65,7 +65,7 @@ function Header({ currentPage, handlePageChange }) {
           >
             Contact Me
           </ExtendedLinkTag>
-          <ExtendedLinkTag openedNavbar={openedNavbar}
+          <ExtendedLinkTag openedNavbar={openedNavbar} current={currentPage === "Resume" ? true : false}
             onClick={() => {
               handlePageChange("Resume");
               setOpenedNavbar((current) => !current);
