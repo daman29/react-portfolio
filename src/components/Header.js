@@ -14,10 +14,10 @@ function Header({ currentPage, handlePageChange }) {
   const [openedNavbar, setOpenedNavbar] = useState(false);
 
   return (
-    <NavbarContainer openedNavbar={openedNavbar}>
+    <NavbarContainer >
       <InnerContainer>
         <LeftContainer>
-          <h3>Hello</h3>
+          <h2>Damneet Sambhy</h2>
         </LeftContainer>
         <RightContainer>
           <LinkTag onClick={() => handlePageChange("AboutMe")}>
@@ -40,8 +40,8 @@ function Header({ currentPage, handlePageChange }) {
         </RightContainer>
       </InnerContainer>
       {openedNavbar && (
-        <ExtendedContainer>
-          <ExtendedLinkTag
+        <ExtendedContainer >
+          <ExtendedLinkTag 
             onClick={() => {
               handlePageChange("AboutMe");
               setOpenedNavbar((current) => !current);
@@ -65,7 +65,7 @@ function Header({ currentPage, handlePageChange }) {
           >
             Contact Me
           </ExtendedLinkTag>
-          <ExtendedLinkTag
+          <ExtendedLinkTag openedNavbar={openedNavbar}
             onClick={() => {
               handlePageChange("Resume");
               setOpenedNavbar((current) => !current);

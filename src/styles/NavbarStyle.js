@@ -3,7 +3,7 @@ import { Pallette } from "../assets/ColourPallette";
 
 export const NavbarContainer = styled.nav`
   width: 100%;
-  height: ${(props) => (props.openedNavbar ? "100vh" : "80px")};
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   background-color: ${Pallette.primary};
@@ -15,21 +15,25 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const LeftContainer = styled.div`
-  flex: 30%;
+  flex: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 3%;
+  @media (max-width: 700px) {
+    flex: 90%;
+  }
 `;
 
 export const RightContainer = styled.div`
-  flex: 70%;
+  flex: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-right: 3%;
   @media (max-width: 700px) {
     justify-content: flex-end;
+    flex: 10%;
   }
 `;
 
@@ -44,7 +48,6 @@ export const ExtendedContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: black;
 
   @media (min-width: 700px) {
     display: none;
@@ -53,6 +56,7 @@ export const ExtendedContainer = styled.div`
 
 export const LinkTag = styled.a`
   text-decoration: none;
+  font-size: large;
   cursor: pointer;
   @media (max-width: 700px) {
     display: none;
@@ -62,6 +66,8 @@ export const LinkTag = styled.a`
 export const ExtendedLinkTag = styled.a`
   text-decoration: none;
   cursor: pointer;
+  font-size: large;
+  margin-bottom: ${(props) => props.openedNavbar ? "5%" : 0};
 `;
 
 export const MenuButton = styled.button`
