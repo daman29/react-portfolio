@@ -5,13 +5,17 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   min-height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: ${Pallette.primary};
   color: white;
+`;
 
-  @media (min-width: 700px) {
-    height: 80px;
-  }
+export const ContentContainer = styled.div`
+  width: 100%;
+  max-width: 1500px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const LeftContainer = styled.div`
@@ -65,9 +69,7 @@ export const LinkTag = styled.a`
   font-size: large;
   cursor: pointer;
   ${(props) =>
-    props.current
-      ? `color: ${Pallette.selected}; font-weight: bold;`
-      : ``}
+    props.current ? `color: ${Pallette.selected}; font-weight: bold;` : ``}
   @media (max-width: 700px) {
     display: none;
   }
@@ -79,9 +81,7 @@ export const ExtendedLinkTag = styled.a`
   font-size: large;
   margin-bottom: ${(props) => (props.openedNavbar ? "2%" : 0)};
   ${(props) =>
-    props.current
-      ? `color: ${Pallette.selected}; font-weight: bold;`
-      : ``}
+    props.current ? `color: ${Pallette.selected}; font-weight: bold;` : ``}
 `;
 
 export const MenuButton = styled.button`
