@@ -66,7 +66,7 @@ export const LinkTag = styled.a`
   cursor: pointer;
   ${(props) =>
     props.current
-      ? `color: orange; font-weight: bold;`
+      ? `color: ${Pallette.selected}; font-weight: bold;`
       : ``}
   @media (max-width: 700px) {
     display: none;
@@ -80,7 +80,7 @@ export const ExtendedLinkTag = styled.a`
   margin-bottom: ${(props) => (props.openedNavbar ? "2%" : 0)};
   ${(props) =>
     props.current
-      ? `color: orange; font-weight: bold;`
+      ? `color: ${Pallette.selected}; font-weight: bold;`
       : ``}
 `;
 

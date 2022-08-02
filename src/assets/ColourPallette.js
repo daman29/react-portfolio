@@ -4,5 +4,6 @@ export const Pallette = {
     textSecondary: '',
     accent: '#9A7AA0',
     highlight: '#9DD9D2',
+    selected: 'orange',
     background: '#F5FBEF',
 }
