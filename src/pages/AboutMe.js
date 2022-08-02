@@ -1,5 +1,22 @@
-import { ContentContainer } from "../styles/PageStyle";
+import {
+  ContentContainer,
+  DisplayPictureContainer,
+  IntroImage,
+  IntroSection,
+  IntroText,
+} from "../styles/PageStyle";
+
+import displayPicture from '../assets/images/DP_low.jpg'
 
 export function AboutMe() {
-    return <ContentContainer>About Me</ContentContainer>
+  return (
+    <ContentContainer>
+      <IntroSection>
+        <IntroText></IntroText>
+        <DisplayPictureContainer>
+          <IntroImage src={displayPicture}></IntroImage>
+        </DisplayPictureContainer>
+      </IntroSection>
+    </ContentContainer>
+  );
 }
