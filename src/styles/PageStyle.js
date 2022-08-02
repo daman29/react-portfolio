@@ -1,5 +1,33 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Pallette } from "../assets/ColourPallette";
+
+const waveAnimation = keyframes`
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+`;
+
 
 export const ContentContainer = styled.div`
   display: flex;
@@ -34,6 +62,17 @@ export const IntroImage = styled.img`
   padding: 2px;
 `;
 
+export const Wave = styled.span`
+  &:hover {
+    animation-name: ${waveAnimation};
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+`;
+
 export const AboutSection = styled.div``;
 
 export const SkillsSection = styled.div``;
+

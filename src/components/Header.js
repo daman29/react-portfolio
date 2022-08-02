@@ -19,7 +19,7 @@ function Header({ currentPage, handlePageChange }) {
       <ContentContainer>
         <InnerContainer>
           <LeftContainer>
-            <h2>Damneet Sambhy</h2>
+            <h1>Damneet Sambhy</h1>
           </LeftContainer>
           <RightContainer>
             <LinkTag
