@@ -94,6 +94,26 @@ export const SkillsSection = styled.div`
 
 export const SkillContainer = styled.div`
   display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (min-width: 700px) {
+    width: 90%;
+  }
 `;
 
-export const SkillCard = styled.div``;
+export const SkillImage = styled.img`
+  max-width: 50px;
+  width: 10vw;
+`;
+
+export const SkillCard = styled.div`
+  max-width: 80px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+`;

@@ -1,6 +1,16 @@
 import js from '../assets/images/skills/js.png'
 import html from '../assets/images/skills/html.png'
 import css from '../assets/images/skills/css.png'
+import git from '../assets/images/skills/git.png'
+import bootstrap from '../assets/images/skills/bootstrap.png'
+import heroku from '../assets/images/skills/heroku.png'
+import jquery from '../assets/images/skills/jquery.png'
+import mongodb from '../assets/images/skills/mongodb.png'
+import mysql from '../assets/images/skills/mysql.png'
+import nodejs from '../assets/images/skills/nodejs.png'
+import react from '../assets/images/skills/react.png'
+import sass from '../assets/images/skills/sass.png'
+import tailwind from '../assets/images/skills/tailwind.png'
 
 export const Skills = [
   {
@@ -17,42 +27,42 @@ export const Skills = [
   },
   {
     name: "ReactJS",
-    image: "../assets/images/skills/react.png",
+    image: react,
   },
   {
     name: "JQuery",
-    image: "../assets/images/skills/jquery.png",
+    image: jquery,
   },
   {
     name: "MySQL",
-    image: "../assets/images/skills/mysql.png",
+    image: mysql,
   },
   {
     name: "MongoDB",
-    image: "../assets/images/skills/mongodb.png",
+    image: mongodb,
   },
   {
     name: "NodeJS",
-    image: "../assets/images/skills/nodejs.png",
+    image: nodejs,
   },
   {
     name: "Sass",
-    image: "../assets/images/skills/sass.png",
+    image: sass,
   },
   {
     name: "TailwindCSS",
-    image: "../assets/images/skills/tailwind.png",
+    image: tailwind,
   },
   {
     name: "Bootstrap",
-    image: "../assets/images/skills/bootstrap.png",
+    image: bootstrap,
   },
   {
     name: "Git",
-    image: "../assets/images/skills/git.png",
+    image: git,
   },
   {
     name: "Heroku",
-    image: "../assets/images/skills/heroku.png",
+    image: heroku,
   },
 ];

@@ -7,6 +7,8 @@ import {
   IntroSection,
   IntroText,
   SkillCard,
+  SkillContainer,
+  SkillImage,
   SkillsSection,
   Wave,
 } from "../styles/PageStyle";
@@ -55,12 +57,16 @@ export function AboutMe() {
       </AboutSection>
       <SkillsSection>
         <h2>My Skills</h2>
-        {Skills.map((skill) => { return (
-          <SkillCard>
-            <img src={skill.image}></img>
-            <h3>{skill.name}</h3>
-          </SkillCard>)
-        })}
+        <SkillContainer>
+          {Skills.map((skill) => {
+            return (
+              <SkillCard>
+                <SkillImage src={skill.image}></SkillImage>
+                <h4>{skill.name}</h4>
+              </SkillCard>
+            );
+          })}
+        </SkillContainer>
       </SkillsSection>
     </ContentContainer>
   );
