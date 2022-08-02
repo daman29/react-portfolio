@@ -48,6 +48,11 @@ export const ExtendedContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  background-color: ${Pallette.primary};
+  z-index: 99;
 
   @media (min-width: 700px) {
     display: none;
