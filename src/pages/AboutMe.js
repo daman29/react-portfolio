@@ -1,3 +1,5 @@
+import { ContentContainer } from "../styles/PageStyle";
+
 export function AboutMe() {
-    return <p>About Me</p>
+    return <ContentContainer>About Me</ContentContainer>
 }

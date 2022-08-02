@@ -14,18 +14,17 @@ export default function Footer() {
   return (
     <FooterContainer>
       <ContentContainer>
-        Footer
         <SocialContainer>
-          <a href="mailto:damneet.sambhy@hotmail.com" target="_blank">
+          <a href="mailto:damneet.sambhy@hotmail.com" target="_blank" rel="noreferrer">
             <FooterImage src={emailImage}></FooterImage>
           </a>
-          <a href="https://www.linkedin.com/in/damneet-sambhy/" target="_blank">
+          <a href="https://www.linkedin.com/in/damneet-sambhy/" target="_blank" rel="noreferrer">
             <FooterImage src={linkedinImage}></FooterImage>
           </a>
-          <a href="https://github.com/daman29" target="_blank">
+          <a href="https://github.com/daman29" target="_blank" rel="noreferrer">
             <FooterImage src={githubImage}></FooterImage>
           </a>
-          <a href="tel:+61450088300" target="_blank">
+          <a href="tel:+61450088300" target="_blank" rel="noreferrer">
             <FooterImage src={phoneImage}></FooterImage>
           </a>
         </SocialContainer>

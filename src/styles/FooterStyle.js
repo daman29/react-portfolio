@@ -6,7 +6,8 @@ export const FooterContainer = styled.div`
   justify-content: center;
   min-height: 80px;
   width: 100%;
-  background-color: ${Pallette.highlight};
+  background-color: ${Pallette.primaryLight};
+  /* border-top: 2px solid ${Pallette.primary}; */
 `;
 export const ContentContainer = styled.div`
   display: flex;
