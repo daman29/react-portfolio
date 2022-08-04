@@ -41,10 +41,16 @@ export const IntroSection = styled.div`
   display: flex;
   width: 100%;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 500px){
+    flex-direction: column;
+  }
 `;
 export const IntroText = styled.div`
   flex: 2 1 65%;
   margin: 2%;
+  text-align: center;
 `;
 
 export const DisplayPictureContainer = styled.div`
@@ -59,6 +65,9 @@ export const IntroImage = styled.img`
   border: 5px dotted ${Pallette.secondary};
   border-radius: 50%;
   padding: 2px;
+  @media (max-width: 500px){
+    height: 60vw;
+  }
 `;
 
 export const Wave = styled.span`
