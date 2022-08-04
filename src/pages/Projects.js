@@ -9,7 +9,7 @@ export function Projects() {
       <h2>Projects</h2>
       <CardContainer>
         {ProjectsArray.map((project) => (
-          <Project project={project} />
+          <Project project={project} key={project.id}/>
         ))}
       </CardContainer>
     </ContentContainer>

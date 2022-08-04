@@ -7,6 +7,7 @@ import gamerHubImage from '../assets/images/projects/gamer-hub.png'
 
 export const ProjectsArray = [
   {
+    id: 1,
     name: "GamerHub",
     description:
       "A full stack application to help gamers find like minded teammates.",
@@ -25,6 +26,7 @@ export const ProjectsArray = [
     ],
   },
   {
+    id: 2,
     name: "Easy Date",
     description:
       "A front end application utilising web APIs to help users with social encounters.",
@@ -42,6 +44,7 @@ export const ProjectsArray = [
     ],
   },
   {
+    id: 3,
     name: "Tech Blog",
     description: "A full stack CMS style tech blog",
     githubLink: "https://github.com/daman29/tech-blog",
@@ -58,6 +61,7 @@ export const ProjectsArray = [
     ],
   },
   {
+    id: 4,
     name: "Just Another Text Editor",
     description:
       "A full stack application (PWA) for a simple single page text editor",
@@ -73,6 +77,7 @@ export const ProjectsArray = [
     ],
   },
   {
+    id: 5,
     name: "Social Media API",
     description: "Back end of a simple social media app built using MongoDB",
     githubLink: "https://github.com/daman29/social-network-API",
@@ -82,6 +87,7 @@ export const ProjectsArray = [
     technologies: ["MongoDB", "NodeJS", "Express Server", "mongoose"],
   },
   {
+    id: 6,
     name: "Team Profile Generator",
     description:
       "A pure JavaScript NodeJS terminal app to generate a team profile as a styled webpage",

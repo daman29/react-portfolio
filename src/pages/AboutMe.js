@@ -60,7 +60,7 @@ export function AboutMe() {
         <SkillContainer>
           {Skills.map((skill) => {
             return (
-              <SkillCard>
+              <SkillCard key={skill.id}>
                 <SkillImage src={skill.image}></SkillImage>
                 <h4>{skill.name}</h4>
               </SkillCard>

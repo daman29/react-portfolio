@@ -13,9 +13,11 @@ export const CardContainer = styled.div`
 export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   flex: 1 1 31%;
   margin: 1%;
-  background-color: ${Pallette.primaryLight};
+  background-color: ${Pallette.accent};
   min-height: 30vh;
   border-radius: 5%;
   @media (max-width: 700px) {
@@ -24,4 +26,12 @@ export const ProjectCard = styled.div`
   @media (max-width: 500px) {
     flex: 1 1 98%;
   }
+`;
+
+export const ProjectImage = styled.img`
+  border-radius: 2% 2% 0 0;
+  width: 100%;
+`;
+
+export const ProjectTitle = styled.h3`
 `;

@@ -1,14 +1,11 @@
 import React from "react";
-import { ProjectCard } from "../styles/ProjectStyle";
+import { ProjectCard, ProjectImage, ProjectTitle } from "../styles/ProjectStyle";
 
-export default function Project({
-  name,
-  description,
-  github,
-  deployed,
-  image,
-  gif,
-  technologies,
-}) {
-  return <ProjectCard><h3>Project</h3></ProjectCard>;
+export default function Project({project}) {
+  return (
+    <ProjectCard>
+      <ProjectImage src={project.image}></ProjectImage>
+      <ProjectTitle>{project.name}</ProjectTitle>
+    </ProjectCard>
+  );
 }
