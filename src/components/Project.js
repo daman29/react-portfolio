@@ -10,5 +10,5 @@ export default function Project({
   gif,
   technologies,
 }) {
-  return <ProjectCard>Project</ProjectCard>;
+  return <ProjectCard><h3>Project</h3></ProjectCard>;
 }

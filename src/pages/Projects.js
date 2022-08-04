@@ -2,7 +2,6 @@ import { ProjectsArray } from "../data/Projects";
 import Project from "../components/Project";
 import { CardContainer } from "../styles/ProjectStyle";
 import { ContentContainer } from "../styles/PageStyle";
-import { useEffect } from "react";
 
 export function Projects() {
   return (

@@ -1,3 +1,10 @@
+import techblogGif from '../assets/images/projects/tech-blog.gif'
+import techblogImage from '../assets/images/projects/tech-blog.png'
+import easyDateGif from '../assets/images/projects/project1gif.gif'
+import easyDateImage from '../assets/images/projects/easy-date.png'
+import gamerHubGif from '../assets/images/projects/gamerhub.gif'
+import gamerHubImage from '../assets/images/projects/gamer-hub.png'
+
 export const ProjectsArray = [
   {
     name: "GamerHub",
@@ -5,8 +12,8 @@ export const ProjectsArray = [
       "A full stack application to help gamers find like minded teammates.",
     githubLink: "https://github.com/HannahStampke/GamerHub",
     deployedLink: "https://gamer-hub-group1.herokuapp.com/",
-    image: "",
-    gif: "",
+    image: gamerHubImage,
+    gif: gamerHubGif,
     technologies: [
       "MySQL",
       "Handlebars",
@@ -23,8 +30,8 @@ export const ProjectsArray = [
       "A front end application utilising web APIs to help users with social encounters.",
     githubLink: "https://github.com/MattDRyan/Easy-Date",
     deployedLink: "https://mattdryan.github.io/Easy-Date/",
-    image: "",
-    gif: "",
+    image: easyDateImage,
+    gif: easyDateGif,
     technologies: [
       "HTML",
       "CSS",
@@ -39,8 +46,8 @@ export const ProjectsArray = [
     description: "A full stack CMS style tech blog",
     githubLink: "https://github.com/daman29/tech-blog",
     deployedLink: "https://tech-blog-damneet.herokuapp.com/",
-    image: "",
-    gif: "",
+    image: techblogImage,
+    gif: techblogGif,
     technologies: [
       "MySQL",
       "Handlebars",
