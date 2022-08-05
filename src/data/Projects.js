@@ -4,6 +4,12 @@ import easyDateGif from '../assets/images/projects/project1gif.gif'
 import easyDateImage from '../assets/images/projects/easy-date.png'
 import gamerHubGif from '../assets/images/projects/gamerhub.gif'
 import gamerHubImage from '../assets/images/projects/gamer-hub.png'
+import jateImage from '../assets/images/projects/jate.png'
+import jateGif from '../assets/images/projects/jate.gif'
+import socialImage from '../assets/images/projects/socialmediaapi.png'
+import socialGif from '../assets/images/projects/socialMediaApi.gif'
+import teamImage from '../assets/images/projects/team.png'
+import teamGif from '../assets/images/projects/team.gif'
 
 export const ProjectsArray = [
   {
@@ -67,8 +73,8 @@ export const ProjectsArray = [
       "A full stack application (PWA) for a simple single page text editor",
     githubLink: "https://github.com/daman29/text-editor-PWA",
     deployedLink: "https://text-editor-pwa-damneet.herokuapp.com/",
-    image: "",
-    gif: "",
+    image: jateImage,
+    gif: jateGif,
     technologies: [
       "Webpack",
       "NodeJS",
@@ -82,8 +88,8 @@ export const ProjectsArray = [
     description: "Back end of a simple social media app built using MongoDB",
     githubLink: "https://github.com/daman29/social-network-API",
     deployedLink: "https://youtu.be/4b9upYeeLMs",
-    image: "",
-    gif: "",
+    image: socialImage,
+    gif: socialGif,
     technologies: ["MongoDB", "NodeJS", "Express Server", "mongoose"],
   },
   {
@@ -93,8 +99,8 @@ export const ProjectsArray = [
       "A pure JavaScript NodeJS terminal app to generate a team profile as a styled webpage",
     githubLink: "https://github.com/daman29/Team-Profile-Generator",
     deployedLink: "https://github.com/daman29/Team-Profile-Generator/blob/main/dist/demo.mp4",
-    image: "",
-    gif: "",
+    image: teamImage,
+    gif: teamGif,
     technologies: ["Inquirer", "NodeJS", "Bootstrap"],
   },
 ];

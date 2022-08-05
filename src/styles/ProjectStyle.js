@@ -23,11 +23,15 @@ export const ProjectCard = styled.div`
   color: black;
   text-align: center;
   box-sizing: border-box;
+  @media (max-width: 1000px) {
+    min-height: 45vh;
+  }
   @media (max-width: 700px) {
     flex: 1 1 48%;
   }
   @media (max-width: 500px) {
     flex: 1 1 98%;
+    min-height: 40vh;
   }
 `;
 
@@ -35,9 +39,6 @@ export const ProjectImage = styled.img`
   border-radius: 5% 5% 0 0;
   object-fit: cover;
   width: 100%;
-  &:hover {
-    src: ${(props) => props.gif ? props.gif : ''}
-  }
 `;
 
 export const ProjectTitle = styled.h3`
