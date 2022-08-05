@@ -126,3 +126,7 @@ export const SkillCard = styled.div`
   align-items: center;
   margin: 5px;
 `;
+
+export const ResumeLink = styled.a`
+  text-decoration: none;
+`

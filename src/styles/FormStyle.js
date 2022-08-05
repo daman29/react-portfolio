@@ -63,6 +63,16 @@ export const SInput = styled.input`
   border-radius: ${v.borderRadius};
 `;
 
+export const SMessage = styled.textarea`
+  outline: none;
+  border: 1px solid ${({ theme }) => theme.textFade};
+  width: 96%;
+  height: 150px;
+  padding: ${v.smSpacing};
+  font-size: 14px;
+  border-radius: ${v.borderRadius};
+`;
+
 export const SButton = styled.button`
   ${btnReset};
   width: 100%;

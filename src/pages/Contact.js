@@ -7,6 +7,7 @@ import {
   SFormTitle,
   SInput,
   SLabel,
+  SMessage,
 } from "../styles/FormStyle";
 
 import { validateEmail } from "../utils/helpers";
@@ -83,7 +84,7 @@ export function Contact() {
         </SFormControl>
         <SFormControl>
           <SLabel>Message:</SLabel>
-          <SInput
+          <SMessage
             value={message}
             name="message"
             onChange={handleInputChange}
