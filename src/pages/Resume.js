@@ -16,7 +16,7 @@ export function Resume() {
     <ContentContainer>
       <h2>Resume</h2>
       <h3>
-        Download my <ResumeLink href={CV}>Resume</ResumeLink>
+        Download my <ResumeLink href={CV} target="_blank">Resume</ResumeLink>
       </h3>
       <AboutSection>
         <h2>Experience</h2>
