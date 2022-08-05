@@ -28,7 +28,7 @@ Single page react portfolio. All components are styled using styled components l
 ```bash
 - npm run start
 ```
-- Then visit [localhost:3000](localhost:3000) to use the app or [Click on this link]() to visit the live application on Heroku..
+- Then visit [localhost:3000](localhost:3000) to use the app or [Click on this link](https://daman29.github.io/react-portfolio) to visit the live application on Heroku..
 
 - Visit the application repository at [GitHub Repository](https://github.com/daman29/react-portfolio)
 
