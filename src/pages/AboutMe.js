@@ -16,12 +16,14 @@ import {
 import displayPicture from "../assets/images/DP_low.jpg";
 
 import { Skills } from "../data/Skills";
+import { useEffect } from "react";
 
 const headingStyle = {
   fontSize: "40px",
 };
 
 export function AboutMe() {
+  useEffect(()=> {document.title = "Damneet Sambhy"},[])
   return (
     <ContentContainer>
       <IntroSection>

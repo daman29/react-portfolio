@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, {  useState, useEffect } from "react";
 import { ContentContainer } from "../styles/PageStyle";
 import {
   SButton,
@@ -13,6 +13,7 @@ import {
 import { validateEmail } from "../utils/helpers";
 
 export function Contact() {
+  useEffect(()=> {document.title = "Contact Me"},[])
   const [email, setEmail] = useState("");
   const [userName, setUserName] = useState("");
   const [message, setMessage] = useState("");

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   ContentContainer,
   SkillsSection,
@@ -12,11 +13,12 @@ import { Skills } from "../data/Skills";
 import CV from "../assets/CV.pdf";
 
 export function Resume() {
+  useEffect(()=> {document.title = "Resume"},[])
   return (
     <ContentContainer>
       <h2>Resume</h2>
       <h3>
-        Download my <ResumeLink href={CV} target="_blank">Resume</ResumeLink>
+        Download my <ResumeLink href={CV} target="_blank" download="Damneet-CV">Resume</ResumeLink>
       </h3>
       <AboutSection>
         <h2>Experience</h2>
