@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/react-portfolio/static/js/main.cc1b53c0.js",
+    "main.js": "/react-portfolio/static/js/main.ff1aa578.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/project1gif.gif": "/react-portfolio/static/media/project1gif.a7d601996c605c011e72.gif",
-    "static/media/team.gif": "/react-portfolio/static/media/team.1066830602c2893323d5.gif",
     "static/media/jate.gif": "/react-portfolio/static/media/jate.87183b464e87e8dfe962.gif",
+    "static/media/build-gif.gif": "/react-portfolio/static/media/build-gif.f81761a72df8423c59b3.gif",
     "static/media/socialMediaApi.gif": "/react-portfolio/static/media/socialMediaApi.819403dd5f8c9e51e21a.gif",
     "static/media/gamerhub.gif": "/react-portfolio/static/media/gamerhub.73966ecf4f330805b10f.gif",
     "static/media/tech-blog.gif": "/react-portfolio/static/media/tech-blog.ca3de0f475306182a427.gif",
     "static/media/gamer-hub.png": "/react-portfolio/static/media/gamer-hub.5e038d2187637bd154f7.png",
     "static/media/DP_low.jpg": "/react-portfolio/static/media/DP_low.b8597cbb88ea48e31a6a.jpg",
+    "static/media/build-image.png": "/react-portfolio/static/media/build-image.cd757c38a04ac75a2162.png",
     "static/media/easy-date.png": "/react-portfolio/static/media/easy-date.abbb98dc1deac973f4c6.png",
     "static/media/CV.pdf": "/react-portfolio/static/media/CV.11f8b2fed9ac73a8db71.pdf",
     "static/media/socialmediaapi.png": "/react-portfolio/static/media/socialmediaapi.7ad30cd50b732db52863.png",
-    "static/media/team.png": "/react-portfolio/static/media/team.c13bbe85ec4c5f17b13d.png",
     "static/media/tech-blog.png": "/react-portfolio/static/media/tech-blog.9d2fc5df08fb5016500c.png",
     "static/media/react.png": "/react-portfolio/static/media/react.e767d58738285206407e.png",
     "static/media/jate.png": "/react-portfolio/static/media/jate.b5bcf1872405e6845cf9.png",
@@ -29,11 +29,11 @@
     "static/media/git.png": "/react-portfolio/static/media/git.2d1f9c7160fc8933ea3e.png",
     "index.html": "/react-portfolio/index.html",
     "main.073c9b0a.css.map": "/react-portfolio/static/css/main.073c9b0a.css.map",
-    "main.cc1b53c0.js.map": "/react-portfolio/static/js/main.cc1b53c0.js.map",
+    "main.ff1aa578.js.map": "/react-portfolio/static/js/main.ff1aa578.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.cc1b53c0.js"
+    "static/js/main.ff1aa578.js"
   ]
 }
